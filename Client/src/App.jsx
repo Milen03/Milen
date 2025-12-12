@@ -1,9 +1,14 @@
+import Hero from "./components/Hero";
+
 export default function App() {
   return (
-    <div className="min-h-screen bg-gray-900 flex items-center justify-center">
-      <h1 className="text-5xl font-extrabold text-white">
-        Tailwind <span className="text-blue-500">работи!</span> 🚀
-      </h1>
+    <div className="min-h-screen bg-[#0a0a0b] text-white">
+      <Hero />
+      
+      {/* Тук ще добавим секциите */}
+      <main className="max-w-6xl mx-auto px-6 py-12">
+        
+      </main>
     </div>
   );
 }
