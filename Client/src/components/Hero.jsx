@@ -30,6 +30,7 @@ export default function Hero() {
               src="/milen.JPG"
               alt="Milen Atanasov"
               className="relative w-40 h-40 rounded-full border-4 border-white/30 shadow-2xl object-cover"
+              style={{objectPosition: 'center 20%'}}
             />
           </div>
 
@@ -81,7 +82,7 @@ export default function Hero() {
           </div>
 
           {/* Стрелка надолу */}
-          <a href="#about" className="mt-12 animate-bounce text-gray-500 hover:text-white transition">
+          <a href="#projects" className="mt-12 animate-bounce text-gray-500 hover:text-white transition">
             <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
