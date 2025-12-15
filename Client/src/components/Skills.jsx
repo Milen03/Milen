@@ -43,7 +43,7 @@ const categories = [
 
 export default function Skills() {
     return (
-        <section id="skills" className="py-24 relative overflow-hidden">
+        <section id="skills" className="min-h-screen flex items-center justify-center py-24 relative overflow-hidden">
 
             {/* Фон */}
             <div className="absolute inset-0 bg-[#0a0a0b]">
@@ -51,7 +51,7 @@ export default function Skills() {
                 <div className="absolute bottom-1/3 left-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
             </div>
 
-            <div className="relative z-10 max-w-6xl mx-auto px-6">
+            <div className="relative z-10 w-full max-w-6xl mx-auto px-6">
 
                 {/* Заглавие */}
                 <div className="mb-20 flex flex-col items-center text-center">
@@ -65,12 +65,12 @@ export default function Skills() {
                 </div>
 
                 {/* Skills по категории */}
-                <div className="flex flex-col gap-20">
+                <div className="flex flex-col items-center gap-20">
                     {categories.map((category) => {
                         const CategoryIcon = category.icon
 
                         return (
-                            <div key={category.name} className="relative">
+                            <div key={category.name} className="relative w-full flex flex-col items-center">
 
                                 {/* Категория заглавие с икона */}
                                 <div className="flex items-center justify-center mb-10">
@@ -92,10 +92,10 @@ export default function Skills() {
                                 </div>
 
                                 {/* Skills grid */}
-                                <div className="flex flex-wrap gap-6 justify-center">
+                                <div className="flex flex-wrap gap-6 justify-center max-w-4xl">
                                     {skills
                                         .filter((skill) => skill.category === category.name)
-                                        .map((skill, skillIndex) => {
+                                        .map((skill) => {
                                             const Icon = skill.icon
                                             return (
                                                 <div
