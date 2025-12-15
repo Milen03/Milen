@@ -81,13 +81,7 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Стрелка надолу */}
-          <a href="#projects" className="mt-12 animate-bounce text-gray-500 hover:text-white transition">
-            <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </a>
-
+          
         </div>
       </div>
     </header>
