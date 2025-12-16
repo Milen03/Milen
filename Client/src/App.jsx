@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import Skills from "./components/Skills";
 import Summary from "./components/Summary";
 import Projects from "./components/Projects";
+import Certificates from "./components/Certificates";
 
 export default function App() {
   return (
@@ -12,11 +13,8 @@ export default function App() {
       <Skills />
       <Summary />
       <Projects />
-      
+      <Certificates />
       {/* Тук ще добавим секциите */}
-      <main className="max-w-6xl mx-auto px-6 py-12">
-        
-      </main>
     </div>
   );
 }
