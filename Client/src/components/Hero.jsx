@@ -40,7 +40,7 @@ export default function Hero() {
               Milen Atanasov
             </h1>
             <p className="text-2xl md:text-3xl text-gray-300">
-              Junior Front-End Developer
+              Junior Developer
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export default function Hero() {
               <span className="text-xl">📱</span> 0877216068
             </span>
             <span className="flex items-center gap-2 text-lg bg-white/5 px-4 py-2 rounded-lg border border-white/10">
-              <span className="text-xl">📍</span> Велико Търново
+              <span className="text-xl">🏠</span> City: Veliko Tarnovo
             </span>
           </div>
 
