@@ -6,9 +6,10 @@ import { FaCode, FaGraduationCap, FaCertificate, FaProjectDiagram, FaUser } from
 const navLinks=[
     {name:"Skills", href:"#skills", icon:FaCode},
     {name:"Summary",href:'#summary', icon:FaUser},
-    { name: 'Education', href: '#education', icon: FaGraduationCap },
-    { name: 'Certificates', href: '#certificates', icon: FaCertificate },
     { name: 'Projects', href: '#projects', icon: FaProjectDiagram },
+    { name: 'Certificates', href: '#certificates', icon: FaCertificate },
+    { name: 'Education', href: '#education', icon: FaGraduationCap },
+   
 ]
 
 // ...existing code...

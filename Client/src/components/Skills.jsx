@@ -10,7 +10,6 @@ import {
     SiMysql,
     SiPostgresql,
     SiTailwindcss,
-    SiGit
 } from 'react-icons/si'
 import { TbApi } from 'react-icons/tb'
 import { HiCode, HiServer, HiDatabase } from 'react-icons/hi'
