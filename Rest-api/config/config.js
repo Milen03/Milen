@@ -1,15 +1,19 @@
+require('dotenv').config();
+
 const env = process.env.NODE_ENV || 'development';
 
 const config = {
     development: {
         port: process.env.PORT || 3000,
-        dbURL: 'mongodb://localhost:27017/forum',
-        origin: ['http://localhost:5555', 'http://localhost:4200']
+        origin: ['http://localhost:5173', 'http://localhost:5555', 'http://localhost:4200'],
+        EMAIL_USER: process.env.EMAIL_USER,
+        EMAIL_PASS: process.env.EMAIL_PASS
     },
     production: {
         port: process.env.PORT || 3000,
-        dbURL: process.env.DB_URL_CREDENTIALS,
-        origin: []
+        origin: [],
+        EMAIL_USER: process.env.EMAIL_USER,
+        EMAIL_PASS: process.env.EMAIL_PASS
     }
 };
 
