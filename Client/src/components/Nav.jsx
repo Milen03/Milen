@@ -8,7 +8,7 @@ const navLinks=[
     {name:"Summary",href:'#summary', icon:FaUser},
     { name: 'Projects', href: '#projects', icon: FaProjectDiagram },
     { name: 'Certificates', href: '#certificates', icon: FaCertificate },
-    { name: 'Education', href: '#education', icon: FaGraduationCap },
+    { name: 'Contact', href: '#contact', icon: FaGraduationCap },
    
 ]
 
