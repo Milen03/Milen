@@ -13,6 +13,7 @@ import {
 } from 'react-icons/si'
 import { TbApi } from 'react-icons/tb'
 import { HiCode, HiServer, HiDatabase } from 'react-icons/hi'
+import { useInView } from 'react-intersection-observer'
 
 const skills = [
     // Frontend
@@ -41,6 +42,11 @@ const categories = [
 ]
 
 export default function Skills() {
+const { ref, inView } = useInView({
+        threshold: 0.1,
+        triggerOnce: true,
+    })
+
     return (
         <section id="skills" className="min-h-screen flex items-center justify-center py-24 relative overflow-hidden">
 
@@ -62,7 +68,11 @@ export default function Skills() {
                         Технологиите, с които работя и изграждам проекти
                     </p>
                 </div>
-
+ <div 
+                    ref={ref}
+                    className={`relative bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 transition-all duration-700
+                        ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+                >
                 {/* Skills по категории */}
                 <div className="flex flex-col items-center gap-20">
                     {categories.map((category) => {
@@ -122,6 +132,7 @@ export default function Skills() {
                             </div>
                         )
                     })}
+                </div>
                 </div>
             </div>
         </section>

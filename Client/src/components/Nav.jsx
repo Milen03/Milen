@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { FaCode, FaGraduationCap, FaCertificate, FaProjectDiagram, FaUser } from 'react-icons/fa'
+import { FaCode, FaCertificate, FaProjectDiagram, FaUser, FaEnvelope } from 'react-icons/fa'
 
 const navLinks=[
     {name:"Skills", href:"#skills", icon:FaCode},
     {name:"Summary",href:'#summary', icon:FaUser},
     { name: 'Projects', href: '#projects', icon: FaProjectDiagram },
     { name: 'Certificates', href: '#certificates', icon: FaCertificate },
-    { name: 'Contact', href: '#contact', icon: FaGraduationCap },
+    { name: 'Contact', href: '#contact', icon: FaEnvelope },
    
 ]
 
