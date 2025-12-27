@@ -11,7 +11,7 @@ const config = {
     },
     production: {
         port: process.env.PORT || 3000,
-        origin: [],
+        origin: ['https://milen-project-482409.web.app/'],
         EMAIL_USER: process.env.EMAIL_USER,
         EMAIL_PASS: process.env.EMAIL_PASS
     }
