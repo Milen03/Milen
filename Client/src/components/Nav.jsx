@@ -19,28 +19,16 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-[#0a0a0b]/95 backdrop-blur-md border-b border-white/10">
-     <nav className="flex items-center justify-center px-8 py-4 max-w-6xl mx-auto relative" aria-label="Global">
+     <nav className="flex items-center justify-between px-4 sm:px-8 py-4 max-w-6xl mx-auto" aria-label="Global">
         
         {/* Лого */}
-         <div className="absolute left-2 flex items-center gap-3">
+         <div className="flex items-center gap-3">
           <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">MA</span>
           </div>
           <a href="#" className="text-lg font-bold text-white hover:text-blue-400 transition">
             Milen.dev
           </a>
-        </div>
-
-        {/* Mobile Menu Button */}
-        <div className="flex lg:hidden absolute right-6">
-          <button
-            type="button"
-            onClick={() => setMobileMenuOpen(true)}
-            className="inline-flex items-center justify-center rounded-lg p-2 text-gray-400 hover:text-white hover:bg-white/10 transition"
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-          </button>
         </div>
 
         {/* Desktop Menu */}
@@ -63,6 +51,15 @@ export default function Navbar() {
           })}
         </div>
 
+        {/* Mobile Menu Button */}
+        <button
+          type="button"
+          onClick={() => setMobileMenuOpen(true)}
+          className="lg:hidden inline-flex items-center justify-center rounded-xl p-3 bg-white/10 text-white hover:bg-white/20 transition-all active:scale-95"
+        >
+          <span className="sr-only">Open main menu</span>
+          <Bars3Icon className="h-7 w-7" aria-hidden="true" />
+        </button>
         
       </nav>
 
