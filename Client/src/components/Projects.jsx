@@ -65,7 +65,7 @@ export default function Projects() {
                         Projects
                     </h2>
                     <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-                        Проекти, които съм изградил с различни технологии
+                        Projects I've built with different technologies
                     </p>
                 </div>
 
@@ -92,7 +92,7 @@ export default function Projects() {
                                 {/* Header Row */}
                                 <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 mb-6">
                                     <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-                                        <h3 className={`text-2xl md:text-3xl font-bold bg-gradient-to-r ${project.gradient} bg-clip-text text-transparent`}>
+                                        <h3 className={`text-2xl md:text-3xl font-bold bg-gradient-to-r ${project.gradient} bg-clip-text text-transparent leading-relaxed py-1`}>
                                             {project.title}
                                         </h3>
                                         

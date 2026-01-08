@@ -24,7 +24,7 @@ export default function Navbar() {
         {/* Лого */}
          <div className="flex items-center gap-3">
           <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">MA</span>
+            <span className="text-white font-bold text-sm"><a href="#">MA</a></span>
           </div>
           <a href="#" className="text-lg font-bold text-white hover:text-blue-400 transition">
             Milen.dev

@@ -65,7 +65,7 @@ const { ref, inView } = useInView({
                     </h2>
 
                     <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-                        Технологиите, с които работя и изграждам проекти
+                        The technologies I work with and build projects with
                     </p>
                 </div>
  <div 

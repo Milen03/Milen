@@ -73,7 +73,7 @@ export default function Certificates() {
                         Certificates
                     </h2>
                     <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-                        Сертификати от курсове и обучения
+                        Certificates from courses and trainings
                     </p>
                 </div>
 
@@ -82,7 +82,7 @@ export default function Certificates() {
                     {certificates.map((cert, index) => (
                         <div
                             key={cert.title}
-                            className={`group relative bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/20
+                            className={`group relative bg-white/5 border border-white/10 rounded-2xl hover:border-white/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/20
                                 ${inView 
                                     ? 'opacity-100 translate-y-0' 
                                     : 'opacity-0 translate-y-10'
@@ -90,10 +90,10 @@ export default function Certificates() {
                             style={{ transitionDelay: `${index * 100}ms` }}
                         >
                             {/* Glow Effect */}
-                            <div className={`absolute inset-0 bg-gradient-to-r ${cert.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
+                            <div className={`absolute inset-0 bg-gradient-to-r ${cert.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-2xl`}></div>
 
                             {/* Image */}
-                            <div className="relative h-48 overflow-hidden">
+                            <div className="relative h-48 overflow-hidden rounded-t-2xl">
                                 <img 
                                     src={cert.image} 
                                     alt={cert.title}
@@ -104,11 +104,11 @@ export default function Certificates() {
 
                             {/* Content */}
                             <div className="relative p-5">
-                                <h3 className={`text-lg font-bold bg-gradient-to-r ${cert.gradient} bg-clip-text text-transparent mb-1`}>
+                                <h3 className={`text-lg font-bold bg-gradient-to-r ${cert.gradient} bg-clip-text text-transparent mb-1 leading-normal`}>
                                     {cert.title}
                                 </h3>
-                                <p className="text-gray-400 text-sm">{cert.issuer}</p>
-                                <p className="text-gray-500 text-xs mt-1">{cert.date}</p>
+                                <p className="text-gray-400 text-sm leading-normal">{cert.issuer}</p>
+                                <p className="text-gray-500 text-sm leading-normal">{cert.date}</p>
                             </div>
 
                             {/* Top Gradient Line */}

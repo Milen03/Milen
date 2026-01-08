@@ -74,7 +74,7 @@ export default function Contact() {
                         Contact Me
                     </h2>
                     <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-                        Имаш въпрос или предложение? Свържи се с мен!
+                        Do you have a question or suggestion? Contact me!
                     </p>
                 </div>
 
