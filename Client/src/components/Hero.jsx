@@ -39,9 +39,7 @@ export default function Hero() {
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent mb-4">
               Milen Atanasov
             </h1>
-            <p className="text-2xl md:text-3xl text-gray-300">
-              Junior Developer
-            </p>
+            <p className="text-2xl md:text-3xl text-gray-300"></p>
           </div>
 
           {/* Контакти */}

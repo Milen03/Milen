@@ -2,8 +2,7 @@ import { HiLightningBolt, HiCode, HiAcademicCap, HiUserGroup } from 'react-icons
 import { SiReact, SiNodedotjs, SiLaravel, SiTailwindcss } from 'react-icons/si'
 import { useInView } from 'react-intersection-observer'
 
-const highlights = [
-    { icon: HiAcademicCap, text: 'Studying at SoftUni', color: 'text-blue-400' },
+const highlights = [,
     { icon: HiCode, text: 'Full-Stack Development', color: 'text-purple-400' },
     { icon: HiLightningBolt, text: 'Fast Learner', color: 'text-yellow-400' },
     { icon: HiUserGroup, text: 'Team Player', color: 'text-green-400' },
@@ -70,7 +69,7 @@ export default function Summary() {
                         {/* Параграфи */}
                         <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
                             <p>
-                                <span className="text-white font-semibold">Ambitious and highly motivated Junior Developer</span>, currently studying at SoftUni with a strong focus on JavaScript and modern web technologies. I am eager to start my professional career as a developer and ready to put in maximum effort to learn, contribute, and grow within a real-world development environment.
+                                <span className="text-white font-semibold">Frontend Developer</span> focused on React and JavaScript. I graduated from SoftUni and have a solid understanding of PHP as well. I enjoy solving algorithmic challenges and real-world problems through code, and I'm driven to build projects that create real value for businesses. Always open to new challenges and opportunities to grow.
                             </p>
 
                             <p>
