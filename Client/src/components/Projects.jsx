@@ -26,6 +26,17 @@ const projects = [
         features: ['Full CRUD', 'REST API', 'User Profiles', 'Responsive Design']
     },
     {
+        title: 'Boyar Coffee',
+        description: 'A coffee shop fortune experience accessed via QR code, featuring city-themed fortunes and a modern interactive way to discover local messages and mood-based notes for visitors.',
+        link: 'https://boyar-coffe-2026-app.web.app/',
+        technologies: [
+            { name: 'React', icon: SiReact, color: 'text-cyan-400' },
+            { name: 'Firebase', icon: SiFirebase, color: 'text-yellow-500' },
+        ],
+        gradient: 'from-amber-500 to-orange-500',
+        features: ['QR Access', 'City-Themed Fortunes', 'Interactive Experience', 'Modern Design']
+    },
+    {
         title: 'Auto-Mile',
         description: 'Web application for listing and managing vehicle ads, developed with React and Node.js. Includes full CRUD operations, user authentication, advanced search filters.',
         link: 'https://auto-mile-455117.web.app',
