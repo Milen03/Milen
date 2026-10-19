@@ -128,7 +128,7 @@ export default function Projects() {
                                         href={project.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className={`inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r ${project.gradient} text-white font-medium hover:opacity-90 transition-opacity shrink-0`}
+                                        className={`inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r ${project.gradient} text-white font-medium hover:opacity-90 transition-opacity shrink-0 sm:self-start lg:self-auto`}
                                     >
                                         <span>View Project</span>
                                         <HiExternalLink className="w-5 h-5" />
