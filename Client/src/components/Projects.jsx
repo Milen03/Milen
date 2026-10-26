@@ -1,8 +1,21 @@
 import { HiExternalLink } from 'react-icons/hi'
-import { SiLaravel, SiReact, SiNodedotjs, SiPhp, SiFirebase } from 'react-icons/si'
+import { SiLaravel, SiReact, SiNodedotjs, SiPhp, SiFirebase, SiExpress, SiMongodb } from 'react-icons/si'
 import { useInView } from 'react-intersection-observer'
 
 const projects = [
+    {
+        title: 'Car Manager',
+        description: 'Car Manager is a personal project for tracking car consumables and maintenance. It reminds you when it is time to change the oil, filters, brake pads, tires and other parts, so you always know what service your car needs and when. Built with React on the front end and a Node.js and Express REST API with MongoDB.',
+        link: 'https://www.carmanager.website',
+        technologies: [
+            { name: 'React', icon: SiReact, color: 'text-cyan-400' },
+            { name: 'Node.js', icon: SiNodedotjs, color: 'text-green-500' },
+            { name: 'Express', icon: SiExpress, color: 'text-gray-300' },
+            { name: 'MongoDB', icon: SiMongodb, color: 'text-green-400' },
+        ],
+        gradient: 'from-sky-500 to-indigo-500',
+        features: ['Maintenance Tracking', 'Service Reminders', 'Oil, Filters & Brake Pads', 'Tire Changes']
+    },
     {
         title: 'Zarzavat',
         description: 'Zarzavat is the project in which vegetables are sold. The project is written in PHP Laravel. The project has an Administrative Panel in which you can control the products and their quantities and prices as well as their orders that have statuses. You can browse the application as a guest. The application will soon enter into a workflow with servers.',
